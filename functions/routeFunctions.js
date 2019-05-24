@@ -125,7 +125,6 @@ exports.getAllUsers = (req, res) => {
 		//get the users collection
 		var docRef = db.collection("users");
 		console.log(docRef);
-		res.send('test');
 		var users = [];
 		//.doc(req.params.username);
 		var query = docRef.get()
